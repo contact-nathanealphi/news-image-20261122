@@ -1,135 +1,87 @@
-# Research — Sunday 22 November 2026 world news
+# Research — Sunday 22 November 2026 world news (final, cards)
 
-Contest: make.fun news-image-20261122. Target: ~38 stories, clean
-broadsheet, big readable headlines. Sources checked directly in this
-session (23 Nov 2026, WIB): CNN, NPR/WNCW, Le Monde, phys.org, The
-Times (COP31 collapse); OneTurn.news 22 Nov brief; AP via KIRO 7
-world wire; Reuters/AFP/Al Jazeera via the 22 Nov video brief;
-Formula1.com / Wikipedia (Las Vegas GP); BMKG via Bernama/SPA
-(Maluku quake, 21 Nov — only its Sunday aftershock is a 22 Nov item);
-the contest's own public leaderboard (top titles agree on COP31,
-Bahrain, 186 drones). No figure below is invented: every number comes
-from one of those sources. Claims are attributed ("Iran claims…",
-"FBI database reportedly hacked").
+Contest: make.fun news-image-20261122. 39 stories: 2 hero features,
+10 illustrated cards, 27 in the ALSO list. Sources checked directly
+23 Nov 2026 (WIB): CNN, NPR/WNCW, Le Monde, phys.org, The Times
+(COP31 collapse); OneTurn.news 22 Nov brief; AP via KIRO 7;
+Reuters/AFP/Al Jazeera; Ukrainian Air Force via Euromaidan/europesays
+(186 drones: 186 launched, 161 downed, 72 jet-powered, 18 impact
+sites); Formula1.com; info.gov.hk + China Daily (Hong Kong EC
+elections, 98.79% turnout); BMKG via Bernama. No figure is invented;
+claims are attributed. Display text is shortened for legibility; the
+full facts are in the notes below where they differ.
 
-## Leads (6 cards)
+## Hero features (2)
 
-1. COP31 COLLAPSES — Antalya: UN climate summit ends Sunday with NO
-   deal. EU, UK, Panama, island states reject the "Antalya Pact"
-   because it never mentions fossil fuels. Longest COP ever (two days
-   past deadline); first breakdown since COP15 Copenhagen 2009.
-   President Murat Kurum: "there is no agreement on this text."
-2. IRAN STRIKES BAHRAIN — Iranian projectiles hit an industrial site
-   in Bahrain, injuring two people. Gulf states condemn the attack.
-   Iran claims it destroyed two US Patriot radars. (Reuters/AFP/Al
-   Jazeera, 21–22 Nov.)
-3. 186 DRONES OVER UKRAINE — Russia fires 186 drones at Ukraine
-   overnight. A drone hits a five-storey apartment block in Dymer,
-   near Kyiv: 14 missing, 2 killed. A missile hits Kryvyi Rih,
-   Zelenskyy's hometown: a 7-year-old boy and a 20-year-old woman
-   killed, 60 wounded. A drone-hit Russian cargo ship, Sparta II,
-   still burns in the Gulf of Finland.
-4. 'EL CHAPO ISIDRO' CAPTURED — Mexican special forces seize cartel
-   boss Fausto Isidro Meza Flores in Sinaloa; 11 killed in the raid,
-   including four soldiers. One of the FBI's 10 most wanted.
-5. STOCKS SLIDE INTO CORRECTION — S&P 500 down 3.7% on Friday,
-   Nasdaq down 5.3%, as the AI sell-off spreads to Japan and Korea.
-6. CIKANDE FACTORY FIRE — Fire at a candy factory in Cikande,
-   Banten, Indonesia: 3 workers dead, dozens still missing as
-   rescuers search the ruins. (AP/Reuters, 22 Nov.)
+1. [CLIMATE — ANTALYA] COP31 collapses with no deal — The EU rejects a pact that never mentions fossil fuels; 194 countries leave with no deal.
+2. [MIDDLE EAST — BAHRAIN] Iran strikes Bahrain site — Iranian projectiles hit an industrial site, injuring two; Gulf states condemn the attack.
 
-## World (11)
+## Illustrated cards (10)
 
-7. ICJ rules Myanmar committed genocide against the Rohingya in
-   2017 — first time the World Court has found a state responsible
-   for genocide. Rohingya in Bangladesh welcome the verdict but say
-   they want to go home.
-8. Israeli settlers torch 12 vehicles in four West Bank villages
-   near Ramallah; Israel opens an inquiry.
-9. Drones hit Khartoum, damage a UN building.
-10. Poland says Russia twice tried to kill a Ukrainian-American
-    rapper; Denmark expels a Russian official over an alleged
-    assassination plot on Danish soil.
-11. UN talks extend work on killer-robot rules to 2028; Russia
-    blocks mandatory rules.
-12. Israeli strike in north Gaza leaves one person critically hurt;
-    several wounded.
-13. Lebanon's army seizes 264 kg of explosives, arrests three.
-14. Sudan's Burhan downplays RSF advances in Blue Nile, vows to
-    keep fighting.
-15. France calls a UN meeting on Russian attacks on embassies in
-    Kyiv.
-16. Spain faces political uncertainty ahead of its 29 November
-    election.
-17. UK and EU strike new deals after the Brussels summit.
+3. [UKRAINE] 186 drones rain on Ukraine — Air defences down 161 of 186; flats hit near Kyiv, 14 missing.
+4. [MEXICO] ‘El Chapo Isidro’ captured — Cartel boss seized in Sinaloa; 11 killed, four of them soldiers.
+5. [MARKETS] Stocks slide into correction — S&P 500 −3.7%, Nasdaq −5.3% as the AI sell-off spreads to Asia.
+6. [INDONESIA] Candy factory fire kills 3 — Blaze in Cikande, Banten; dozens still missing in the ruins.
+7. [WORLD] Myanmar guilty of genocide — World Court finds Myanmar guilty of genocide.
+8. [ASIA] EU–Indonesia trade deal signed — Tariffs scrapped on up to 98.5% of goods after a decade of talks.
+9. [SPACE] BepiColombo reaches Mercury — European-Japanese probe enters orbit after an eight-year journey.
+10. [SPORT] Verstappen wins Las Vegas GP — Norris 2nd, Piastri 3rd after 35 lead changes under the lights.
+11. [ASIA] Hong Kong votes in record poll — Election Committee poll: 98.79% turnout.
+12. [TECH] FBI database reportedly hacked — The FBI investigates a breach of its crime database, the NCIC.
 
-## Asia & Indonesia (7)
+## Also on 22 November (27)
 
-18. EU–INDONESIA TRADE DEAL — signed after almost 10 years of
-    talks; tariffs scrapped on up to 98.5% of goods.
-19. Nepal PM Balen Shah makes his first visit to India; rail links
-    and cooperation top the talks.
-20. China–Japan relations worsen over Taiwan and critical minerals.
-21. Lahore tops the world pollution ranking, AQI over 500; eight
-    Pakistani cities among the worst.
-22. South Korea's education chief resigns amid an AI exam-cheating
-    scandal.
-23. Aftershock rattles Maluku early Sunday after Saturday's M7.2
-    quake off Southwest Maluku (BMKG: no tsunami threat, no damage
-    reported).
-24. A magnitude 5.7 quake hits central Japan early Sunday, injuring
-    at least 22 people and disrupting trains in Aichi and Shizuoka.
+13. Settlers torch 12 West Bank vehicles
+14. Drones hit Khartoum, damage UN building
+15. Poland: Russia plotted to kill US rapper
+16. Denmark expels Russian over murder plot
+17. UN killer-robot talks pushed to 2028
+18. Gaza strike leaves one critically hurt
+19. Lebanon seizes 264 kg of explosives
+20. Sudan’s Burhan vows to fight on
+21. France calls UN meeting on Kyiv attacks
+22. Drone hits Vyshneve supermarket; 3 killed
+23. Odesa grid ‘unable to cope’ after strikes
+24. Nepal PM Shah makes first visit to India
+25. China–Japan ties worsen over Taiwan
+26. Lahore tops pollution list; AQI over 500
+27. S. Korea minister quits over AI cheating
+28. M5.7 quake hits central Japan; 22 hurt
+29. AI sell-off spreads to Japan and Korea
+30. Trump says Iran wants a deal
+31. Spain faces uncertainty before 29 Nov vote
+32. Croatians rally over a hospital death
+33. Russia grasps US offer on European security
+34. Ex-SA deputy president dies at 71
+35. Nigeria boat capsizes; at least 24 dead
+36. Cost-of-living protests spread in Europe
+37. Eisenkot invites Likud to coalition talks
+38. India declares 720/9 v New Zealand
+39. Jet drone crosses into Moldova twice
 
-## Markets & tech (5)
+Total: 39 stories, 7 regions.
 
-25. AI sell-off spreads to Japan and Korea after Wall Street's fall.
-26. FBI criminal database (NCIC) reportedly hacked; the FBI is
-    investigating the breach.
-27. Trump calls the claimed FBI hack "not good" but says it may
-    offer benefits.
-28. Iran claims it destroyed two US Patriot radars in the Bahrain
-    strike. (Claim, attributed.)
-29. Trump says Iran wants a deal, as the Gulf crisis deepens.
-
-## Sport, culture & science (7)
-
-30. Verstappen wins a thrilling Las Vegas Grand Prix — Norris 2nd,
-    Piastri 3rd, 35 lead changes, Ferraris collide.
-31. BepiColombo enters orbit around Mercury after an eight-year
-    journey.
-32. Phumzile Mlambo-Ngcuka, former South African deputy president
-    and UN Women chief, dies at 71.
-33. Boat capsizes in Nigeria carrying people to a funeral; at least
-    24 dead.
-34. Protests over living costs and public services spread across
-    Europe.
-35. Eisenkot invites Netanyahu's Likud to coalition talks in Israel.
-36. India declares 720/9 against New Zealand in the first Test;
-    Rishabh Pant hits his ninth Test century.
-
-## More (4)
-
-37. Salvadorans killed in Haiti while handling explosives — first
-    official deaths after deployment.
-38. Yemen's armed forces say 149 Houthis killed or wounded in 816
-    attacks.
-39. Croatians rally in Zagreb demanding answers over a psychiatric
-    hospital death.
-40. Russia grasps a US offer on European security to revive old
-    demands.
-
-Total: 40 stories, 7 regions (Middle East, Europe, Africa, Asia,
-Indonesia, Americas, global markets/tech/science/sport).
-
+## Full-fact notes (where display text shortens a story)
+- Ukraine: 186 drones launched overnight 21-22 Nov, 161 downed/suppressed,
+  72 jet-powered Shaheds; strikes at 18 locations. Dymer apartment block:
+  14 missing, 2 injured. Kryvyi Rih double-tap: 2 killed (boy, 7; woman,
+  20), ~60 wounded. Vyshneve supermarket: 3 killed, 15 hurt.
+- COP31: EU, UK, Panama, island states rejected the Antalya Pact (no
+  fossil-fuel mention); longest COP ever; first breakdown since COP15 2009.
+- Bahrain: Iranian projectiles hit an industrial site, 2 injured; Iran
+  claims it destroyed two US Patriot radars (claim, attributed).
+- Cikande: AP reports 3 dead, dozens missing; one aggregator's "24 body
+  bags" conflicts with AP — AP is used.
+- Hong Kong: Election Committee Subsector Ordinary Elections, 856
+  candidates, 723 seats, 5,640 voters, 98.79% turnout (record).
+- Mexico: Fausto Isidro Meza Flores, one of the FBI's 10 most wanted;
+  11 killed in the raid, four of them soldiers.
+- Markets: S&P 500 -3.7%, Nasdaq -5.3% on Friday; AI sell-off spread to
+  Japan and Korea.
 ## Deliberately left out
-
-- Maluku M7.2 quake itself: Saturday 21 Nov, 16:42 WIB (BMKG) — a
-  21 Nov story, not 22 Nov. Only the Sunday aftershock is listed.
-- Shenzhen Trump–Xi–Putin summit: 19–20 Nov, not 22 Nov.
+- Maluku M7.2 quake itself: Saturday 21 Nov — a 21 Nov story.
+- Shenzhen Trump-Xi-Putin summit: 19-20 Nov, not 22 Nov.
+- "148 drones" / "400-drone barrage" (rival titles): wrong per Ukr AF.
+- "Baduy fire": named in one leaderboard title, not verified.
 - Las Vegas GP: raced Saturday night in Las Vegas = Sunday 22 Nov
-  04:00–06:00 UTC, so it counts as a 22 Nov event in some zones
-  and was first reported on 22 Nov.
-- Hong Kong vote / "Baduy fire": named in one leaderboard title
-  each, not verified in any news source checked — left out.
-- Cikande death toll: AP reports 3 dead, dozens missing; one
-  aggregator's "24 body bags" conflicts with AP — AP is used.
+  04:00-06:00 UTC, so it counts as a 22 Nov event in some zones.

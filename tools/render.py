@@ -12,9 +12,20 @@ import math
 import os
 from PIL import Image, ImageDraw, ImageFont
 
+# Sweep overrides (env): ITEM_MAX = largest item font tried, ITEM_MIN =
+# smallest allowed, STORY_CAP = keep only the first N column stories
+# (weakest items are last in each section), LEAD_H = lead card height.
+ITEM_MAX = int(os.environ.get("ITEM_MAX", "17"))
+ITEM_MIN = int(os.environ.get("ITEM_MIN", "11"))
+STORY_CAP = int(os.environ.get("STORY_CAP", "99"))
+
+
+def item_font(size):
+    return font(COND_B if ITEM_FACE == "cond" else SANS_B, size)
+
 W, H = 1024, 1024
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(HERE, "..", "assets", "entry.png")
+OUT = os.environ.get("OUT", os.path.join(HERE, "..", "assets", "entry.png"))
 
 PAPER = (247, 243, 235)
 INK = (24, 24, 24)
@@ -34,6 +45,18 @@ SERIF = "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"
 SERIF_R = "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf"
 SANS = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 SANS_B = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+COND_B = "/usr/share/fonts/truetype/noto/NotoSans-CondensedBold.ttf"
+COND = "/usr/share/fonts/truetype/noto/NotoSans-Condensed.ttf"
+
+# Item face: "cond" (Noto Sans Condensed Bold — much narrower, so a
+# 16-17px item still fits one line) or "dejavu" (DejaVu Sans Bold).
+ITEM_FACE = os.environ.get("ITEM_FACE", "cond")
+LEAD_H = int(os.environ.get("LEAD_H", "158"))
+LEAD_HEAD = int(os.environ.get("LEAD_HEAD", "21"))
+ITEM_LEAD = int(os.environ.get("ITEM_LEAD", "4"))
+ITEM_GAP = int(os.environ.get("ITEM_GAP", "8"))
+HEAD_SIZE = int(os.environ.get("HEAD_SIZE", "16"))
+DECK_SIZE = int(os.environ.get("DECK_SIZE", "12"))
 
 
 def font(path, size):
@@ -192,8 +215,8 @@ LEADS = [
      "condemn the attack."),
     ("UKRAINE", NAVY, pic_drone,
      "186 drones rain on Ukraine",
-     "Drone hits flats near Kyiv; 14 missing. Missile kills two in "
-     "Kryvyi Rih, 60 wounded."),
+     "Air defences down 161 of 186 drones; flats hit near Kyiv, 14 "
+     "missing."),
     ("MEXICO", AMBER, pic_badge,
      "‘El Chapo Isidro’ captured",
      "Cartel boss seized in a Sinaloa raid; 11 killed, four of them "
@@ -210,49 +233,48 @@ LEADS = [
 
 COLUMNS = [
     ("WORLD", RED, [
-        "ICJ: Myanmar guilty of Rohingya genocide",
-        "Settlers torch 12 vehicles in West Bank; Israel opens inquiry",
-        "Drones hit Khartoum, damage a UN building",
-        "Poland: Russia twice tried to kill a US-Ukrainian rapper",
-        "Denmark expels Russian official over an alleged plot",
+        "Myanmar guilty of Rohingya genocide",
+        "Settlers torch 12 West Bank vehicles",
+        "Drones hit Khartoum, damage UN building",
+        "Poland: Russia plotted to kill US rapper",
+        "Denmark expels Russian over murder plot",
         "UN killer-robot talks pushed to 2028",
-        "Gaza strike leaves one person critically hurt",
-        "Lebanon seizes 264 kg of explosives, arrests three",
-        "Sudan’s Burhan vows to fight on as RSF advances",
-        "France calls UN meeting on Kyiv embassy attacks",
-        "Spain faces uncertainty before its 29 Nov election",
-        "UK and EU strike new deals after Brussels summit",
+        "Gaza strike leaves one critically hurt",
+        "Lebanon seizes 264 kg of explosives",
+        "Sudan’s Burhan vows to fight on",
+        "France calls UN meeting on Kyiv attacks",
+        "Drone hits Vyshneve supermarket; 3 killed",
+        "Odesa grid ‘unable to cope’ after strikes",
     ]),
     ("ASIA & INDONESIA", TEAL, [
-        "EU–Indonesia trade deal signed; tariffs end on 98.5% of goods",
-        "Nepal PM Balen Shah makes his first visit to India",
-        "China–Japan ties worsen over Taiwan and minerals",
-        "Lahore tops world pollution list; AQI over 500",
-        "S. Korea education chief quits over AI cheating scandal",
-        "Aftershock rattles Maluku after Saturday’s M7.2 quake",
-        "M5.7 quake hits central Japan; 22 hurt, trains halted",
+        "EU–Indonesia sign landmark trade deal",
+        "Nepal PM Shah makes first visit to India",
+        "China–Japan ties worsen over Taiwan",
+        "Lahore tops pollution list; AQI over 500",
+        "S. Korea minister quits over AI cheating",
+        "M5.7 quake hits central Japan; 22 hurt",
+        "Hong Kong votes; turnout a record 98.79%",
     ]),
     ("MARKETS & TECH", AMBER, [
         "AI sell-off spreads to Japan and Korea",
-        "FBI crime database reportedly hacked; FBI investigates",
-        "Trump: claimed FBI hack ‘not good’, may offer benefits",
-        "Iran claims it destroyed two US Patriot radars",
-        "Trump says Iran wants a deal as Gulf crisis deepens",
+        "FBI crime database reportedly hacked",
+        "Iran claims it downed two Patriot radars",
+        "Trump says Iran wants a deal",
     ]),
     ("SPORT, CULTURE & SCIENCE", PLUM, [
-        "Verstappen wins a thrilling Las Vegas Grand Prix",
+        "Verstappen wins thrilling Las Vegas GP",
         "BepiColombo enters orbit around Mercury",
-        "Mlambo-Ngcuka, ex-SA deputy president, dies at 71",
-        "Nigeria boat capsizes; at least 24 dead on way to funeral",
-        "Protests over living costs spread across Europe",
-        "Eisenkot invites Netanyahu’s Likud to coalition talks",
-        "India declares 720/9 v New Zealand; Pant’s 9th Test ton",
+        "Ex-SA deputy president dies at 71",
+        "Nigeria boat capsizes; at least 24 dead",
+        "Cost-of-living protests spread in Europe",
+        "Eisenkot invites Likud to coalition talks",
+        "India declares 720/9 v New Zealand",
     ]),
     ("MORE", SLATE, [
-        "Salvadorans killed in Haiti — first deaths after deployment",
-        "Yemen army: 149 Houthis killed or wounded in 816 attacks",
-        "Croatians rally over a psychiatric hospital death",
-        "Russia grasps US offer on European security",
+        "Jet drone crosses into Moldova twice",
+        "Second strike kills two firefighters",
+        "Salvadorans killed in Haiti deployment",
+        "UK and EU strike new deals in Brussels",
     ]),
 ]
 
@@ -269,6 +291,20 @@ def draw():
     d = ImageDraw.Draw(img)
     mx = 28  # side margin
 
+    # story set for this variant (STORY_CAP trims weakest last items)
+    cols = [(name, color, list(items)) for name, color, items in COLUMNS]
+    if STORY_CAP < 99:
+        total = sum(len(c[2]) for c in cols)
+        drop = total - STORY_CAP
+        idx = len(cols) - 1
+        while drop > 0 and idx >= 0:
+            name, color, items = cols[idx]
+            cut = min(drop, len(items) - 1)
+            cols[idx] = (name, color, items[:len(items) - cut])
+            drop -= cut
+            idx -= 1
+    nstories = 6 + sum(len(c[2]) for c in cols)
+
     # masthead ------------------------------------------------------
     d.rectangle([mx, 10, W - mx, 14], fill=RED)
     d.rectangle([mx, 17, W - mx, 18], fill=INK)
@@ -282,7 +318,7 @@ def draw():
            font=df, fill=INK)
     d.rectangle([mx, 132, W - mx, 158], fill=NAVY)
     bf = font(SANS_B, 15)
-    left = "40 STORIES  •  7 REGIONS  •  ONE DAY"
+    left = f"{nstories} STORIES  •  7 REGIONS  •  ONE DAY"
     right = "THE DAY IN WORLD NEWS"
     d.text((mx + 10, 139), left, font=bf, fill=(255, 255, 255))
     d.text((W - mx - 10 - d.textlength(right, font=bf), 139), right,
@@ -291,7 +327,7 @@ def draw():
     # lead cards ----------------------------------------------------
     gap = 12
     cw = (W - 2 * mx - 2 * gap) // 3
-    ch = 152
+    ch = LEAD_H
     top = 170
     for i, (kick, color, pic, head, deck) in enumerate(LEADS):
         r, c = divmod(i, 3)
@@ -305,54 +341,54 @@ def draw():
         d.text((x + 10, y + 14), kick, font=kf, fill=color)
         sf = font(SANS_B, 10)
         d.text((x + 10, y + 31), "LEAD STORY", font=sf, fill=MUTED)
-        hf = font(SERIF, 20)
+        hf = font(SERIF, LEAD_HEAD)
         lines = wrap(d, head, hf, cw - 20, max_lines=3)
-        y2 = block(d, x + 10, y + 52, lines, hf, INK, 24)
-        df2 = font(SANS, 12)
+        y2 = block(d, x + 10, y + 52, lines, hf, INK, LEAD_HEAD + 4)
+        df2 = font(SANS, DECK_SIZE)
         lines = wrap(d, deck, df2, cw - 20, max_lines=2)
-        block(d, x + 10, y2 + 4, lines, df2, MUTED, 15)
+        block(d, x + 10, y2 + 4, lines, df2, MUTED, DECK_SIZE + 3)
 
     # columns -------------------------------------------------------
     col_w = (W - 2 * mx - 2 * 16) // 3
     col_x = [mx, mx + col_w + 16, mx + 2 * (col_w + 16)]
-    col_top = 500
+    col_top = 506
     col_bottom = 962
 
     def measure(size):
         """Total height needed per column at this item font size."""
-        fnt = font(SANS_B, size)
-        lead = size + 4
+        fnt = item_font(size)
+        lead = size + ITEM_LEAD
         need = []
         for group in LAYOUT:
             h = 0
             for si in group:
-                _, _, items = COLUMNS[si]
-                h += 26  # section header
+                _, _, items = cols[si]
+                h += 29  # section header
                 for it in items:
                     n = len(wrap(d, it, fnt, col_w - 16))
-                    h += n * lead + 8
+                    h += n * lead + ITEM_GAP
             need.append(h)
         return need
 
-    size = 14
-    while size > 11 and max(measure(size)) > col_bottom - col_top:
+    size = ITEM_MAX
+    while size > ITEM_MIN and max(measure(size)) > col_bottom - col_top:
         size -= 1
-    fnt = font(SANS_B, size)
-    lead = size + 4
-    hf = font(SANS_B, 14)
+    fnt = item_font(size)
+    lead = size + ITEM_LEAD
+    hf = item_font(HEAD_SIZE)
 
     for ci, group in enumerate(LAYOUT):
         x = col_x[ci]
         y = col_top
         for si in group:
-            name, color, items = COLUMNS[si]
+            name, color, items = cols[si]
             d.text((x, y), name, font=hf, fill=color)
             d.line([x, y + 20, x + col_w, y + 20], fill=color, width=2)
             y += 29
             for it in items:
                 lines = wrap(d, it, fnt, col_w - 16)
                 d.text((x, y + 1), "•", font=fnt, fill=RED)
-                y = block(d, x + 16, y, lines, fnt, INK, lead) + 8
+                y = block(d, x + 16, y, lines, fnt, INK, lead) + ITEM_GAP
 
     # footer --------------------------------------------------------
     d.line([mx, 972, W - mx, 972], fill=INK, width=2)
@@ -366,7 +402,8 @@ def draw():
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     img.save(OUT, optimize=True)
-    print("wrote", OUT, os.path.getsize(OUT), "bytes")
+    print("wrote", OUT, os.path.getsize(OUT), "bytes",
+          "stories", nstories, "item_font", size)
 
 
 if __name__ == "__main__":
