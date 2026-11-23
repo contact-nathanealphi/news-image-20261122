@@ -430,7 +430,8 @@ def draw():
     d.text(((W - d.textlength(TICKER, font=tf2)) / 2, 981), TICKER,
            font=tf2, fill=INK)
     cf = font(SANS, 11)
-    credit = "All stories from Sunday 22 November 2026."
+    credit = ("Sources: Reuters, AP, AFP, CNN, Ukrainian Air Force, "
+              "info.gov.hk, BMKG — all stories from Sunday 22 Nov 2026.")
     d.text(((W - d.textlength(credit, font=cf)) / 2, 1003), credit,
            font=cf, fill=MUTED)
 
